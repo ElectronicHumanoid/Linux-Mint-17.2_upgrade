@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>LM_17.2 Upgrade &amp; PLC software by ElectronicHumanoid</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>LM_17.2 Upgrade &amp; PLC software</h1>
+        <h2>Documentation for linux upgrade as well as installing software for the Mitsubishi PLC Trainer</h2>
+        <a href="https://github.com/ElectronicHumanoid/Linux-Mint-17.2_upgrade" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="linux-mint-172-upgrade-with-virtual-box-install" class="anchor" href="#linux-mint-172-upgrade-with-virtual-box-install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux Mint 17.2 Upgrade with Virtual Box install</h1>
+
+<p>(This documentation is for the electronic students at WCJC)</p>
+
+<p>This is documentation on upgrading a <strong>Linux Mint 17.1</strong> system to the <strong>Linux Mint 17.2</strong> operating system. This includes the installation of <strong>Virtual Box</strong> and <strong>Windows XP</strong> as well as installing <strong>programs</strong> and <strong>drivers</strong> to run the <strong>Mitsubishi PLC Trainer</strong> from the PC.</p>
+
+<h3>
+<a id="installing-linux-mint-172" class="anchor" href="#installing-linux-mint-172" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing Linux Mint 17.2</h3>
+
+<p>(I apologize for the lack of pictures in the beginning, but the rest of the documentation should have pictures that make it super easy to follow)</p>
+
+<p><strong>1.</strong> Reboot your PC. As it boots back up hit <strong>F2</strong> to enter the <strong>BIOS</strong></p>
+
+<p><strong>2.</strong> Use the arrow keys on your keyboard and select the <strong>BOOT</strong> Tab.</p>
+
+<p><strong>3.</strong> Make sure that the DVD drive is first in the Boot Priority List.</p>
+
+<p><strong>4.</strong> Use the arrow keys on your keyboard to select the <strong>EXIT</strong> tab, and select <strong>Exit Saving Changes.</strong></p>
+
+<p><strong>5.</strong> Allow your PC to boot back up.</p>
+
+<p><strong>6.</strong> Once the PC has rebooted, open the DVD drive and insert the Linux Mint 17.2 installation DVD in the drive.</p>
+
+<p><strong>7.</strong> Reboot the PC again.</p>
+
+<p><strong>8.</strong> As it is rebooting you will notice it is a different boot screen.</p>
+
+<p><strong>9.</strong> Once it gets to the Login screen you can either Hit enter to login or after 10 seconds it will auto-login.</p>
+
+<p><strong>10.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596065/89383726-9a78-11e5-854b-7e800eaf1224.png" alt="linux1"></p>
+
+<p><strong>11.</strong><img src="https://cloud.githubusercontent.com/assets/12395931/11596062/893789ac-9a78-11e5-93a3-513ac01a1088.png" alt="linux2"></p>
+
+<p><strong>12.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596064/893814d0-9a78-11e5-84ba-d61de27258d8.png" alt="linux3"></p>
+
+<p><strong>13.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596063/8937b7c4-9a78-11e5-87ff-4726ee8af543.png" alt="linux4"></p>
+
+<p><strong>14.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596164/1d75dfec-9a79-11e5-9e32-8ca0dea82830.png" alt="linux5"></p>
+
+<p><strong>15.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596169/1d788210-9a79-11e5-8356-b37d7dbfa37c.png" alt="linux6"></p>
+
+<p><strong>16.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596168/1d78890e-9a79-11e5-9ad9-13cef9932f95.png" alt="linux7"></p>
+
+<p><strong>17.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596165/1d7763da-9a79-11e5-9a3b-490dabb3dd41.png" alt="linux8"></p>
+
+<p><strong>18.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596167/1d77ea62-9a79-11e5-9bb0-b8d6859cb5fc.png" alt="linux9"></p>
+
+<p><strong>19.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596166/1d779800-9a79-11e5-8c25-e3cdd5c298f4.png" alt="snapshot2"></p>
+
+<p><strong>20.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596170/1d86ef08-9a79-11e5-867a-7b446e0d3216.png" alt="snapshot3"></p>
+
+<p><strong>21.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596172/1d88c4d6-9a79-11e5-89ae-ee4f0c4afe0f.png" alt="snapshot4"></p>
+
+<p><strong>22.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596173/1d892e58-9a79-11e5-8fef-7afcfcc3a914.png" alt="snapshot5"></p>
+
+<p><strong>23.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11596171/1d87b3ac-9a79-11e5-933e-dc87e1f6fbb1.png" alt="snapshot6"></p>
+
+<p><strong>24.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11597034/83f46dec-9a7e-11e5-80b4-b29ba230b80f.png" alt="snapshot7"></p>
+
+<p><strong>25.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11597144/5711efec-9a7f-11e5-9532-65667403a132.png" alt="snapshot10"></p>
+
+<h2>
+<a id="installing-virtual-box" class="anchor" href="#installing-virtual-box" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing Virtual Box</h2>
+
+<p><strong>1.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11597711/ef3b874e-9a82-11e5-83c8-5ffabae8dd6c.png" alt="snapshot12"></p>
+
+<p><strong>2.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11598551/36d37666-9a88-11e5-830d-4e80393dbb41.png" alt="snapshot13"></p>
+
+<p><strong>3.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11598591/772c3cac-9a88-11e5-85a6-f531002ba801.png" alt="snapshot14"></p>
+
+<p><strong>4.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11598660/d391651c-9a88-11e5-9167-d282f136b92c.png" alt="snapshot15"></p>
+
+<p><strong>5.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11598712/18933df2-9a89-11e5-8009-2c603a70605c.png" alt="snapshot16"></p>
+
+<p><strong>6.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11598788/8c5fe74e-9a89-11e5-9538-5ce55fafe55b.png" alt="snapshot17"></p>
+
+<p><strong>7.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11598845/dec673cc-9a89-11e5-9d47-ad26a6714718.png" alt="snapshot18"></p>
+
+<p><strong>8.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11599159/d3900a30-9a8a-11e5-934f-3dfbb29c781e.png" alt="snapshot19"></p>
+
+<p><strong>9.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11599225/309a7210-9a8b-11e5-9be0-4abcd7712243.png" alt="snapshot20"></p>
+
+<p><strong>10.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11599312/baf11f36-9a8b-11e5-82bb-367f01259351.png" alt="snapshot21"></p>
+
+<p><strong>11.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11599356/0d367b10-9a8c-11e5-84ba-9892da1ea5cd.png" alt="snapshot23"></p>
+
+<p><strong>12.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11599495/d84b0b0e-9a8c-11e5-9f68-65cfe8ac9ef8.png" alt="snapshot25"></p>
+
+<p><strong>13.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11599495/d84b0b0e-9a8c-11e5-9f68-65cfe8ac9ef8.png" alt="snapshot25"></p>
+
+<p><strong>14.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11628532/e056443a-9cb7-11e5-9520-f096fd2094ef.png" alt="snapshot26"></p>
+
+<p><strong>15.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11628531/e0545a1c-9cb7-11e5-8be1-9d14f6901245.png" alt="snapshot28"></p>
+
+<h2>
+<a id="windows-xp-install-in-virtualbox" class="anchor" href="#windows-xp-install-in-virtualbox" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows XP Install in VirtualBox</h2>
+
+<p><strong>1.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11629238/94686e86-9cbc-11e5-91ec-745fb83c65b4.png" alt="win2"></p>
+
+<p><strong>2.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11629367/72d51138-9cbd-11e5-829a-92e8f54f866f.png" alt="win3"></p>
+
+<p><strong>3.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632626/7acdbb32-9ccd-11e5-8613-8082a6f29897.png" alt="win4"></p>
+
+<p><strong>4.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632656/99a1a8a2-9ccd-11e5-8781-c4e433978206.png" alt="win5"></p>
+
+<p><strong>5.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632671/a4a64d5c-9ccd-11e5-9463-3e7771817948.png" alt="win6"></p>
+
+<p><strong>6.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632752/edf2ba22-9ccd-11e5-883a-707f45fd109c.png" alt="win8"></p>
+
+<p><strong>7.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632843/4a17bd20-9cce-11e5-8ea2-392b14da4e3e.png" alt="win9"></p>
+
+<p><strong>8.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632876/61f28d08-9cce-11e5-9957-437b464122f1.png" alt="win11"></p>
+
+<p><strong>9.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632986/d90220e8-9cce-11e5-96fe-0062189559e1.png" alt="win12"></p>
+
+<p><strong>10.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11633075/308ee440-9ccf-11e5-9cd0-713d03f08c84.png" alt="win13"></p>
+
+<p><strong>11.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11633165/9b4cb780-9ccf-11e5-9d1b-143582e8574a.png" alt="win14"></p>
+
+<p><strong>12.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11634904/edd27ebe-9cd8-11e5-8d7e-ff642fd77880.png" alt="win15"></p>
+
+<p><strong>13.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11634996/760f1b0c-9cd9-11e5-9258-ea8ed621eec7.png" alt="win16"></p>
+
+<p><strong>14.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11635033/be842a08-9cd9-11e5-94ef-8fe6abb5f665.png" alt="win17"></p>
+
+<p><strong>15.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11635249/19e5e156-9cdb-11e5-872f-eb28a310af9d.png" alt="win18"></p>
+
+<p><strong>16.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11635290/5f4cf054-9cdb-11e5-97d6-61640b60055e.png" alt="win19"></p>
+
+<p><strong>17.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11635346/b636b51c-9cdb-11e5-8b1a-112a74f2ddaf.png" alt="win20"></p>
+
+<p><strong>18.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11636536/3a9a25c2-9ce2-11e5-8252-31578b7814be.png" alt="win21"></p>
+
+<p><strong>19.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638442/afaf3e6a-9cec-11e5-8df5-121b9fc9aa6f.png" alt="win22"></p>
+
+<p><strong>20.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638332/24c5f276-9cec-11e5-9c95-3abe9216f5df.png" alt="win23"></p>
+
+<p><strong>21.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638589/5bc9b306-9ced-11e5-83d7-f62a378cc6b4.png" alt="win25"></p>
+
+<p><strong>22.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638607/784c4e4e-9ced-11e5-8f25-ebc9b5886556.png" alt="win26"></p>
+
+<p><strong>23.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638650/bcf2aaac-9ced-11e5-837d-55140526f82b.png" alt="win27"></p>
+
+<p><strong>24.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638686/e7701efe-9ced-11e5-924a-b94039d30b50.png" alt="win30"></p>
+
+<p><strong>25.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638708/0931d7c6-9cee-11e5-8795-973b3a929273.png" alt="win31"></p>
+
+<p><strong>26.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638735/20a532a4-9cee-11e5-9659-8b384bfbd0a1.png" alt="win32"></p>
+
+<p><strong>27.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638768/3cef2816-9cee-11e5-8ec2-6e3277070633.png" alt="win33"></p>
+
+<p><strong>28.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638782/55a8a2e2-9cee-11e5-8a75-c08582491889.png" alt="win34"></p>
+
+<p><strong>29.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638797/68a17216-9cee-11e5-8a36-deb694f00b0d.png" alt="win35"></p>
+
+<p><strong>30.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638817/7fd1938a-9cee-11e5-9af5-006c93be5f10.png" alt="win36"></p>
+
+<p><strong>31.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638826/92afaeb0-9cee-11e5-9951-451f7a3f6201.png" alt="win37"></p>
+
+<p><strong>32.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638844/a798528c-9cee-11e5-801e-17d178c585be.png" alt="win38"></p>
+
+<p><strong>33.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638856/b9ae9c74-9cee-11e5-8f1d-2ffe1bbe5337.png" alt="win40"></p>
+
+<h2>
+<a id="mitsubishi-plc-trainer-software-install" class="anchor" href="#mitsubishi-plc-trainer-software-install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mitsubishi PLC Trainer Software Install</h2>
+
+<p><strong>1.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11629581/aaf73504-9cbe-11e5-9d50-f3909456d3de.png" alt="mit1"></p>
+
+<p><strong>2.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11629656/043045e8-9cbf-11e5-93f6-94b62e32c7d8.png" alt="mit2"></p>
+
+<p><strong>3.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11630008/f0bbcc60-9cc0-11e5-9d62-48586720cced.png" alt="mit3"></p>
+
+<p><strong>4.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11630039/20071358-9cc1-11e5-90f6-8b035526f15c.png" alt="mit4"></p>
+
+<p><strong>5.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11630216/009fc02c-9cc2-11e5-9823-d80569917050.png" alt="mit5"></p>
+
+<p><strong>6.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11631222/9f6ada30-9cc6-11e5-8cfa-49981d279908.png" alt="mit7"></p>
+
+<p><strong>7.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11631335/22672b14-9cc7-11e5-8267-5e6a60e3b16f.png" alt="mit8"></p>
+
+<p><strong>8.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11631532/0b4336c0-9cc8-11e5-9f9f-e103d3a68401.png" alt="mit10"></p>
+
+<p><strong>9.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11631747/2be8d4d8-9cc9-11e5-9c3a-44d0b8691aad.png" alt="mit11"></p>
+
+<p><strong>10.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11631764/3e60b22a-9cc9-11e5-96d6-5d5a5d348e62.png" alt="mit12"></p>
+
+<p><strong>11.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11631880/d43a45ea-9cc9-11e5-9e9b-c46b95464aa6.png" alt="mit13"></p>
+
+<p><strong>12.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11631940/289f0c92-9cca-11e5-8100-9661874cce7d.png" alt="mit14"></p>
+
+<p><strong>13.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11631962/4cd057ec-9cca-11e5-90c7-03da29399924.png" alt="mit15"></p>
+
+<p><strong>14.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11631977/65249d62-9cca-11e5-9406-51c1634f8eee.png" alt="mit16"></p>
+
+<p><strong>15.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11631992/7e655cee-9cca-11e5-86b8-cc9bf32490c1.png" alt="mit17"></p>
+
+<p><strong>16.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632025/b67f8a28-9cca-11e5-9562-a1933bc3717c.png" alt="mit18"></p>
+
+<p><strong>17.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632107/1f0142ee-9ccb-11e5-88e9-4e17c466cadb.png" alt="mit19"></p>
+
+<p><strong>18.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632123/35f5b782-9ccb-11e5-9437-4eed81f2a075.png" alt="mit20"></p>
+
+<p><strong>19.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632199/984de63e-9ccb-11e5-8358-abc94a70a940.png" alt="mit21"></p>
+
+<p><strong>20.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632217/ade77a96-9ccb-11e5-8fa6-fc3605f897b9.png" alt="mit22"></p>
+
+<p><strong>21.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632361/6260470a-9ccc-11e5-9f61-60d3b5881e9c.png" alt="mit23"></p>
+
+<p><strong>22.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632391/8459eab4-9ccc-11e5-8801-1f074105f4b5.png" alt="mit24"></p>
+
+<p><strong>23.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11632402/913e64d0-9ccc-11e5-995c-8cf4d489fd71.png" alt="mit25"></p>
+
+<p><strong>24.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11636753/42987b7e-9ce3-11e5-9883-7ec85cd9484c.png" alt="mit26"></p>
+
+<p><strong>25.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11636785/80d35896-9ce3-11e5-9b8e-9f3dbc5a066a.png" alt="mit27"></p>
+
+<p><strong>26.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11636897/15506946-9ce4-11e5-9e21-cdd458e48d93.png" alt="mit28"></p>
+
+<p><strong>27.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11636952/5f457f28-9ce4-11e5-9b05-53eab4b7ed51.png" alt="mit29"></p>
+
+<p><strong>28.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637009/a32a2770-9ce4-11e5-9193-454f5765715f.png" alt="mit30"></p>
+
+<p><strong>29.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637083/40091178-9ce5-11e5-9831-9df604dd6afe.png" alt="mit31"></p>
+
+<p><strong>30.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637216/c2287aa4-9ce5-11e5-8ab3-c0837ac715a5.png" alt="mit32"></p>
+
+<p><strong>31.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637280/125a0d1c-9ce6-11e5-9c19-a315c6e7580d.png" alt="mit33"></p>
+
+<p><strong>32.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637461/38ebf296-9ce7-11e5-9ed6-92a97da63b2a.png" alt="mit34"></p>
+
+<p><strong>33.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637513/7af2db46-9ce7-11e5-923d-489f7964e1bd.png" alt="mit35"></p>
+
+<p><strong>34.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637565/c2649f0a-9ce7-11e5-8112-59b2276fd2e4.png" alt="mit36"></p>
+
+<p><strong>35.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638983/82ee3298-9cef-11e5-9522-dbfc52605a2c.png" alt="mit37"></p>
+
+<p><strong>36.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637778/11970abc-9ce9-11e5-83b5-6d5094c3be83.png" alt="mit38"></p>
+
+<p><strong>37.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637825/4e1c3b7e-9ce9-11e5-9bcd-13b625fd401f.png" alt="mit39"></p>
+
+<p><strong>38.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637895/c1bb48c2-9ce9-11e5-87bd-8538aa495a1b.png" alt="mit40"></p>
+
+<p><strong>39.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11637961/1067054c-9cea-11e5-8644-31737700e29d.png" alt="mit41"></p>
+
+<p><strong>40.</strong> <img src="https://cloud.githubusercontent.com/assets/12395931/11638128/c3310132-9cea-11e5-8599-b0e2aba8e2c3.png" alt="mit42"></p>
+
+<p><strong>41.</strong> You should now be set up and ready to go with the <strong>Mitsubishi PLC Trainer.</strong> </p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/ElectronicHumanoid/Linux-Mint-17.2_upgrade/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/ElectronicHumanoid/Linux-Mint-17.2_upgrade/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/ElectronicHumanoid/Linux-Mint-17.2_upgrade"></a> is maintained by <a href="https://github.com/ElectronicHumanoid">ElectronicHumanoid</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
